@@ -5,7 +5,7 @@ int r_motor = 3;
 int speed = 50; 
 int speed2 = 25;
 int pause = 450;
-int pause2 = 600;
+int pause2 = 950;
 int l_bump = 8;
 int r_bump = 9;
 int right_side = 2;
@@ -44,7 +44,7 @@ int main()
 	ao();
 	//Face Forward
 	
-while(analog(left_side)>wall_front){
+while(analog(front)>wall){
 	while(analog(right_side)>wall){
 	r_veer();	
 	}
